@@ -1,90 +1,149 @@
-.wd-bookmark-margin {
-    padding: 12px 16px;
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.wd-bookmark-title {
+
+/*color*/
+
+
+.wd-font-20 {
     font-size: 20px;
-    color: white;
-    margin: 8px 4px;
-}
-.wd-post-h2-1 {
-    color: white;
-    font-size: 16px;
-    margin: 3px 2px;
 }
 
-.wd-post-p {
-    max-width: 520px;
-    color: white;
-    margin: 10px 0px;
+.wd-font-15 {
+    font-size: 15px;
 }
 
-.wd-bookmark-block {
-    border-top-color: rgb(47, 51, 54);
-    border-bottom-color: rgb(47, 51, 54);
-    border-style: solid;
+.wd-font-13 {
+    font-size: 13px;
+}
+
+.wd-font-icon {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+}
+
+.wd-font-icon-red {
+    text-decoration: none;
+    color: rgb(200, 50, 50);
+}
+
+/*margin*/
+.wd-no-margin {
+    margin: 0px
+}
+
+/*padding*/
+
+.wd-pad-left-16 {
+    padding-left: 16px;
+}
+
+.wd-pad-right-16 {
+    padding-right: 16px;
+}
+
+.wd-pad-top-12 {
+    padding-top: 12px;
+}
+
+.wd-pad-left-5 {
+    padding-left: 5px;
+}
+
+.wd-pad-left-12 {
+    padding-left: 12px;
+}
+
+.wd-pad-right-12 {
+    padding-right: 12px;
+}
+
+.wd-pad-bot-12 {
+    padding-bottom: 12px;
+}
+
+.wd-pad-right-50 {
+    padding-right: 50px;
+}
+
+/*dimension*/
+.wd-max-width-506 {
+    max-width: 506px;
+}
+
+.wd-dim-post-image {
+    width: 504px;
+    height: 262px;
+}
+
+/*color*/
+
+.wd-fg-white {
+    color: white;
+}
+
+.wd-fg-lightgray {
+    color: rgb(100, 100, 100);
+}
+
+/*border*/
+
+.wd-border-1px {
     border-width: 1px;
-    overflow: hidden;
-}
-
-.wd-block-content {
-    /*padding: 12px 6px;*/
-    /*float:left;*/
-}
-
-.wd-bookmark-avatar {
-    width: 48px;
-    border-radius: 40px;
-    padding: 12px;
-}
-
-.wd-avatar-bg {
-    /*height: 500px;*/
-}
-
-.wd-img-block {
-    border-color: rgb(47, 51, 54);
     border-style: solid;
-    border-width: 1px;
-    border-radius: 15px;
-    overflow: hidden;
-    max-width: 504px;
 }
 
-.wd-post-img {
+.wd-border-all-lightgray {
+    border-color: rgb(100, 100, 100);
+}
+
+.wd-border-left-lightgray {
+    border-left-color: rgb(100, 100, 100);
+}
+
+.wd-border-right-lightgray {
+    border-right-color: rgb(100, 100, 100);
+}
+
+.wd-border-bottom-lightgray {
+    border-bottom-color: rgb(100, 100, 100);
+}
+
+.wd-border-circle {
+    border-radius: 30px;
+}
+
+.wd-border-round-top-15 {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-
 }
 
-.wd-img-textarea {
-    padding: 12px;
+.wd-border-round-bot-15 {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-
-    border-top-color: rgb(47, 51, 54);
-    border-style: solid;
-    border-width: 1px;
 }
 
-.wd-img-title {
-    color: white;
-    font-size: 15px;
-    margin: 8px 0px;
+/*grid*/
+
+.wd-grid-col {
+    float: left;
 }
 
-.wd-img-p {
-    color: darkgray;
-    margin:0;
+.wd-grid-row {
+    clear: both;
 }
 
-.wd-justify-spaceBetween {
-    max-width: 420px;
+.wd-overflow-hide {
+    overflow: hidden;
+}
+
+/*flex*/
+
+.wd-flex-row {
     display: flex;
-    justify-content: space-between;
-}
+    flex-direction: row;
+    /*white-space: nowrap;*/
+    /*overflow-x: auto;*/
 
-.wd-icon-label {
-    margin: 0px 12px;
-    color: darkgray;
-    font-size: 15px;
 }
