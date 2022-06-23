@@ -1,0 +1,24 @@
+.wd-bg-black {
+    background-color: black;
+}
+
+.wd-bg-darkgray {
+    background-color: rgb(50, 50, 50);
+}
+
+.wd-fg-white {
+    color: white !important;
+}
+
+.wd-fg-lightgray {
+    color: rgb(150, 150, 150);
+}
+
+.wd-border-none {
+    border-width: 0px !important;
+}
+
+.wd-border-darkgray {
+    border-color: rgb(50, 50, 50);
+    border-style: solid;
+}
