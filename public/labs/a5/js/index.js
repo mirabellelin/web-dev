@@ -124,26 +124,36 @@ for (let i=0; i<stringArray1.length; i++) {
 
 //map function
 console.log('Map');
+console.log(numberArray1);
 const squares = numberArray1.map(square);
+console.log(squares);
 const cubes = numberArray1.map(a => a * a * a);
+console.log(cubes);
 
 //find
 //takes predicate function as arg
 console.log('Find');
 const four = numberArray1.find(a => a === 4);
+console.log(four);
 const string3 = stringArray1.find(a => a === 'string3');
+console.log(string3);
 
 //find index
 console.log('Find index');
 const fourIndex = numberArray1.findIndex(a => a === 4);
+console.log(fourIndex);
 const string3Index = stringArray1.findIndex(a => a === 'string3');
+console.log(string3Index);
 
 //filter
 console.log('Filter');
+console.log(numberArray1);
 const numbersGreaterThan2 = numberArray1.filter(a => a > 2);
+console.log(numbersGreaterThan2);
 const evenNumbers = numberArray1.filter(a => a % 2 === 0);
+console.log(evenNumbers);
 const oddNumbers = numberArray1.filter(a => a % 2 !== 0);
-
+console.log(oddNumbers);
 
 /////////////////////
 //Template Strings///
@@ -161,6 +171,7 @@ const greeting1 = `Welcome home ${username}`;
 console.log(greeting1);
 const loggedIn1 = false;
 const greeting2 = `Logged in: ${loggedIn1 ? "Yes" : "No"}`;
+console.log(greeting2);
 
 ////////////
 //jQuery///
@@ -189,15 +200,93 @@ const init = () => {
     //set attribute
     const setClassAttr = $("#set-class-attr");
     setClassAttr.attr('class', 'class-0');
+
+    //add class
+    const addClass1Example = $("#add-class-1");
+    addClass1Example.addClass('class-1');
+
+    //remove class
+    const removeClass1Example = $("#remove-class-1");
+    removeClass1Example.removeClass('class-2');
+
+    //hide and show content
+    const hideMe = $("#hide-me");
+    hideMe.hide();
+    const showMe = $("#show-me");
+    showMe.show();
+
+    //create new element
+    const newLineItem = $("<li>Line item 1</li>");
+    const anotherLineItem = $("<li>Line item 2</li>");
+
+    //append new element
+    const ul = $("#append-new-elements");
+    ul.append(newLineItem);
+    ul.append(anotherLineItem);
+
+    //remove content
+    const removeThisLi = $("#remove-this");
+    const emptyThisUl = $("#empty-this");
+    removeThisLi.remove();
+    emptyThisUl.empty();
+
+    //change content
+    const changeThisText =
+        $("#change-this-text");
+    const changeThisHtml =
+        $("#change-this-html");
+    changeThisText.html('New text');
+    changeThisHtml.html(`
+        <li>Line item A</li>
+        <li>Line item B</li>
+        <li>Line item C</li>
+        `);
+
+    //navigating DOM hierarchy
+    const child2 = $("#child-2");
+    const parent1 =
+        child2.parents("#parent");
+    parent1
+        .css('background-color', 'red')
+        .css('color', 'white');
+    const parent = $("#parent");
+    const child = parent.find("#child-2");
+    child.css('background-color', 'blue')
+
+    //click events
+    const handleClick =
+        () => console.log('Handle click');
+    const clickable = $('.clickable');
+    clickable.click(handleClick);
+
+    //event target
+    const handleEventTarget = (event) => {
+        const target = event.target;
+        console.log(target);
+        $(target)
+            .css('background-color', 'blue')
+            .css('color', 'white');
+    }
+    const eventTarget = $("#event-target");
+    eventTarget.click(handleEventTarget);
+
+    //hiding and showing target
+    let hideBtn, showBtn, hideShowHeader;
+    hideBtn = $('#hide');
+    showBtn = $('#show');
+    hideShowHeader = $('#hide-show');
+    const hideHandler = () => {
+        hideShowHeader.hide();
+    }
+    const showHandler = () => {
+        hideShowHeader.show();
+    }
+    hideBtn.click(hideHandler);
+    showBtn.click(showHandler);
+
 }
 // $(init);
 init();
 
 
-//add class
-const addClass1Example = $("#add-class-1");
-addClass1Example.addClass('class-1');
-//remove class
-const removeClass1Example = $("#remove-class-1");
-removeClass1Example.removeClass('class-2');
 
