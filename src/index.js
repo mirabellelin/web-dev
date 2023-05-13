@@ -1,11 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import React from 'react'; // core library
+import ReactDOM from 'react-dom/client'; // library for rendering into DOM element
+import './index.css'; // application entry point, can be called anything, but App is common
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+root.render( // use library to render
   <React.StrictMode>
     <App />
   </React.StrictMode>
