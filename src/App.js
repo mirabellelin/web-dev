@@ -19,15 +19,15 @@ function App() {
                     {/*<Route path="/tuiter/explore"*/}
                     {/*       element={<ExploreScreen/>}/>*/}
 
-                    {/*<Route path="/hello"*/}
-                    {/*       exact={true}*/}
-                    {/*       element={<HelloWorld/>}/>*/}
-                    {/*<Route path="/"*/}
-                    {/*       exact={true}*/}
-                    {/*       element={<Labs/>}/>*/}
-                    {/*<Route path="/tuiter"*/}
-                    {/*       exact={true}*/}
-                    {/*       element={<Tuiter/>}/>*/}
+                    <Route path="/hello"
+                           exact={true}
+                           element={<HelloWorld/>}/>
+                    <Route path="/"
+                           exact={true}
+                           element={<Labs/>}/>
+                    <Route path="/tuiter"
+                           exact={true}
+                           element={<Tuiter/>}/>
                 </Routes>
             </div>
         </BrowserRouter>
