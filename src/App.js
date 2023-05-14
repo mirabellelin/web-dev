@@ -8,16 +8,16 @@ import Labs from "./components/labs";
 import Tuiter from "./components/tuiter";
 import {BrowserRouter, Route, Routes}
     from "react-router-dom";
+import ExploreScreen from "./components/tuiter/explore-screen";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="container">
                 <Routes>
-                    {/*<Route path="/tuiter/home"*/}
-                    {/*       element={<HomeScreen/>}/>*/}
-                    {/*<Route path="/tuiter/explore"*/}
-                    {/*       element={<ExploreScreen/>}/>*/}
+
+                    <Route path="/tuiter/explore"
+                           element={<ExploreScreen/>}/>
 
                     <Route path="/hello"
                            exact={true}
