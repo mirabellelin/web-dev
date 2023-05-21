@@ -4,7 +4,7 @@ import Styles from "./styles";
 import ConditionalOutput from "./conditional-output";
 import TodoList from "./todo/todo-list";
 import {Link} from "react-router-dom";
-
+import ReduxExamples from "./redux-examples";
 
 function Labs() {
     return (
@@ -14,9 +14,10 @@ function Labs() {
                 <Link to="/hello">
                     Hello
                 </Link> |
-                <Link to="/">
-                    Labs
+                <Link to="/tuiter">
+                    Tuiter
                 </Link>
+                <ReduxExamples/>
             </div>
 
             <Classes/>
@@ -24,6 +25,7 @@ function Labs() {
             <ConditionalOutput/>
             <h3>TodoList</h3>
             <TodoList/>
+
         </div>
     );
 }
